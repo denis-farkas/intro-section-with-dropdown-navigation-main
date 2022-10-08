@@ -1,0 +1,102 @@
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: "Epilogue", sans-serif;
+  background-image: url(design/desktop-design.jpg);
+  background-repeat: no-repeat;
+  height: 900px;
+  width: 1440px;
+  background-position: center;
+  margin: 0 auto;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid red;
+}
+
+.header {
+  width: 100%;
+  height: 4rem;
+  border: 1px solid blue;
+}
+
+.section-left {
+  width: 31rem;
+  height: 50rem;
+  border: 1px solid red;
+  padding-left: 9rem;
+}
+
+.title {
+  width: 29rem;
+  letter-spacing: -0.55px;
+  margin-top: 8.6rem;
+  font-size: 4.4em;
+  color: red;
+  border: 1px solid yellow;
+}
+
+.description {
+  width: 27rem;
+  margin-top: -1rem;
+  letter-spacing: 0.1px;
+  line-height: 1.5;
+}
+
+.learn {
+  height: 3.2rem;
+  letter-spacing: -0.2px;
+  border-radius: 16px;
+  margin-top: 1.9rem;
+  margin-bottom: 0;
+  padding-left: 0.55rem;
+  font-family: inherit;
+  font-size: 1rem;
+  color: red;
+  font-weight: 700;
+  line-height: 1;
+  border: 1px solid red;
+  background-color: rgba(33, 9, 47, 0);
+  width: 9.2rem;
+  cursor: pointer;
+}
+
+.learn:hover {
+  background-color: #6448fe;
+  border: none;
+}
+
+.section-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+  width: 40rem;
+  height: 50rem;
+  border: 1px solid green;
+}
+
+.content {
+  width: 70%;
+  height: auto;
+  margin-top: 3rem;
+}
+
+img.hero {
+  width: 96%;
+  height: auto;
+}
+/*# sourceMappingURL=style.css.map */
