@@ -4,47 +4,173 @@ html {
 
 body {
   font-family: "Epilogue", sans-serif;
-  background-image: url(design/desktop-design.jpg);
-  background-repeat: no-repeat;
-  height: 900px;
-  width: 1440px;
-  background-position: center;
-  margin: 0 auto;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+
+header .logo {
+  float: left;
+  margin: 0.8rem;
+  margin-right: 2.5rem;
+}
+
+// topnav
+.topnav {
+  height: auto;
+  width: 100%;
+}
+
+@media screen and (min-width: 1441px) {
+  .topnav {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+.topnav .icon {
+  display: none;
+}
+
+.topnav .close {
+  display: none;
+}
+
+//dropdown
+.dropdown {
+  float: left;
+  position: relative;
+}
+
+.dropdown-btn {
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 14px;
+  color: hsl(0, 0%, 41%);
+  display: block;
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  letter-spacing: 0.7px;
+  margin-right: 0.4rem;
+  font-weight: 700;
+}
+
+.dropdown-btn img {
+  margin-left: 0rem;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  height: auto;
+  top: 3rem;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0px 8px 16px 5px rgba(0, 0, 0, 0.2);
+  z-index: 5;
+}
+
+.dropdown-content.first {
+  right: 1rem;
+  padding: 0.8rem 0.8rem;
+  text-align: start;
+  min-width: 7rem;
+  color: hsl(0, 0%, 41%);
+}
+
+.dropdown-content.second {
+  right: 0;
+  padding: 0.8rem 0rem 0.8rem 1rem;
+  text-align: center;
+  color: hsl(0, 0%, 41%);
+}
+
+.icone {
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: hsl(0, 0%, 41%);
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: 0.2rem;
+  font-weight: 700;
+}
+
+.topnav a:hover {
+  color: hsl(0, 0%, 8%);
+}
+
+.dropdown-content.first a {
+  float: none;
+  text-decoration: none;
+  width: 6rem;
+}
+
+a.register {
+  float: right;
+  margin-top: 0.2rem;
+  margin-right: 0.8rem;
+  margin-left: 1.5rem;
+  padding: 0.7rem;
+  width: 4.2rem;
+  font-weight: 700;
+  background-color: white;
+  border: 1px solid hsl(0, 0%, 41%);
+  color: hsl(0, 0%, 41%);
+  border-radius: 13px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.topnav .right {
+  float: right;
+}
+
+a.register:hover {
+  border: 1px solid hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 8%);
 }
 
 .container {
   display: flex;
   justify-content: center;
-  border: 1px solid red;
-}
-
-.header {
-  width: 100%;
-  height: 4rem;
-  border: 1px solid blue;
 }
 
 .section-left {
   width: 31rem;
   height: 50rem;
-  border: 1px solid red;
-  padding-left: 9rem;
+  padding-left: 8.7rem;
 }
 
 .title {
   width: 29rem;
   letter-spacing: -0.55px;
-  margin-top: 8.6rem;
-  font-size: 4.4em;
-  color: red;
-  border: 1px solid yellow;
+  margin-top: 7.9rem;
+  font-size: 4.4rem;
 }
 
 .description {
   width: 27rem;
-  margin-top: -1rem;
+  margin-top: -1.2rem;
   letter-spacing: 0.1px;
-  line-height: 1.5;
+  line-height: 1.55;
+  color: hsl(0, 0%, 41%);
 }
 
 .learn {
@@ -56,33 +182,44 @@ body {
   padding-left: 0.55rem;
   font-family: inherit;
   font-size: 1rem;
-  color: red;
+  color: white;
   font-weight: 700;
   line-height: 1;
-  border: 1px solid red;
-  background-color: hsla(278, 68%, 11%, 0);
+  border: 1px solid hsl(0, 0%, 8%);
+  background-color: hsl(0, 0%, 8%);
   width: 9.2rem;
   cursor: pointer;
 }
 
 .learn:hover {
-  background-color: hsl(249, 99%, 64%);
-  border: none;
+  background-color: white;
+  border: 1px solid hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 8%);
 }
+
 .section-right {
   display: flex;
   justify-content: center;
   align-items: top;
   width: 40rem;
   height: 50rem;
-  border: 1px solid green;
 }
 .content {
-  width: 70%;
-  height: auto;
-  margin-top: 3rem;
+  margin-top: 2.2rem;
+  width: 26.5rem;
+  margin-left: -0.8rem;
+  background-image: url(./images/image-hero-desktop.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
-img.hero {
-  width: 96%;
-  height: auto;
+
+.section-footer {
+  margin-top: 4.2rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+}
+
+.section-footer img {
+  margin-right: 2.25rem;
 }

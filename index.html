@@ -18,11 +18,75 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-mobile.css" />
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
   </head>
   <body>
-    <header class="header">
-      Features Company Careers About Login Register
+    <div class="background" id="back"></div>
+    <header>
+      <div class="topnav" id="myTop">
+        <img class="logo" src="./images/logo.svg" alt="logo" />
+        <div class="dropdown first">
+          <button class="dropdown-btn">
+            Features
+            <img class="down" src="./images/icon-arrow-down.svg" alt="down" />
+          </button>
+          <div class="dropdown-content first">
+            <a href="#"
+              ><span class="icone"
+                ><img src="./images/icon-todo.svg" alt="todo list"
+              /></span>
+              Todo List</a
+            >
+            <a href="#"
+              ><span class="icone"
+                ><img src="./images/icon-calendar.svg" alt="calendar"
+              /></span>
+              Calendar</a
+            >
+            <a href="#"
+              ><span class="icone"
+                ><img src="./images/icon-reminders.svg" alt="reminders"
+              /></span>
+              Reminders</a
+            >
+            <a href="#"
+              ><span class="icone"
+                ><img src="./images/icon-planning.svg" alt="planning"
+              /></span>
+              Planning</a
+            >
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropdown-btn">
+            Company
+            <img class="down" src="./images/icon-arrow-down.svg" alt="down" />
+          </button>
+          <div class="dropdown-content second">
+            <a href="#">History</a>
+            <a href="#">Our Team</a>
+            <a href="#">Blog</a>
+          </div>
+        </div>
+        <a href="#">Careers</a>
+        <a href="#">About</a>
+        <div class="right">
+          <a href="#">Login </a>
+          <a href="#" class="register">Register</a>
+        </div>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <img class="menu" src="./images/icon-menu.svg" alt="menu" />
+        </a>
+        <a href="javascript:void(0);" class="close" onclick="myFunction()">
+          <img
+            class="menu-close"
+            src="./images/icon-close-menu.svg"
+            alt="menu"
+          />
+        </a>
+      </div>
     </header>
     <main class="container">
       <section class="section-left">
@@ -32,17 +96,17 @@
           create team rituals, and watch productivity soar.
         </p>
         <button class="learn">Learn more</button>
-        <div class="section-footer"></div>
-      </section>
-      <section class="section-right">
-        <div class="content">
-          <img
-            class="hero"
-            src="./images/image-hero-desktop.png"
-            alt="image hero"
-          />
+        <div class="section-footer">
+          <img src="./images/client-databiz.svg" alt="databiz" />
+          <img src="./images/client-audiophile.svg" alt="databiz" />
+          <img src="./images/client-meet.svg" alt="databiz" />
+          <img src="./images/client-maker.svg" alt="databiz" />
         </div>
       </section>
+      <section class="section-right">
+        <div class="content"></div>
+      </section>
     </main>
+    <script src="navigation.js"></script>
   </body>
 </html>
